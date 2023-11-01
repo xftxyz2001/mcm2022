@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="DengXian"] ;
+edge [fontname="DengXian"] ;
+0 [label=<氧化铁(Fe2O3) &le; 3.3<br/>gini = 0.435<br/>samples = 33<br/>value = [16, 34]>, fillcolor="#96cbf1"] ;
+1 [label=<氧化锡(SnO2) &le; 0.02<br/>gini = 0.188<br/>samples = 26<br/>value = [4, 34]>, fillcolor="#50a9e8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<氧化铜(CuO) &le; 1.688<br/>gini = 0.463<br/>samples = 8<br/>value = [4, 7]>, fillcolor="#aad5f4"] ;
+1 -> 2 ;
+3 [label=<gini = 0.0<br/>samples = 6<br/>value = [0, 7]>, fillcolor="#399de5"] ;
+2 -> 3 ;
+4 [label=<gini = 0.0<br/>samples = 2<br/>value = [4, 0]>, fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label=<gini = 0.0<br/>samples = 18<br/>value = [0, 27]>, fillcolor="#399de5"] ;
+1 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 7<br/>value = [12, 0]>, fillcolor="#e58139"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

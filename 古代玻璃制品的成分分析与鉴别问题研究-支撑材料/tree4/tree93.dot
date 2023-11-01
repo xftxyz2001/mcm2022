@@ -1,0 +1,9 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="DengXian"] ;
+edge [fontname="DengXian"] ;
+0 [label=<氧化铝(Al2O3) &le; 2.0<br/>gini = 0.42<br/>samples = 27<br/>value = [15, 35]>, fillcolor="#8ec7f0"] ;
+1 [label=<gini = 0.0<br/>samples = 10<br/>value = [15, 0]>, fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.0<br/>samples = 17<br/>value = [0, 35]>, fillcolor="#399de5"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

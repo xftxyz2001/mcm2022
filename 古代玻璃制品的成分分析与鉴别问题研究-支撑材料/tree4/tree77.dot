@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="DengXian"] ;
+edge [fontname="DengXian"] ;
+0 [label=<五氧化二磷(P2O5) &le; 6.105<br/>gini = 0.42<br/>samples = 33<br/>value = [15, 35]>, fillcolor="#8ec7f0"] ;
+1 [label=<二氧化硫(SO2) &le; 1.485<br/>gini = 0.213<br/>samples = 22<br/>value = [4, 29]>, fillcolor="#54abe9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<氧化铝(Al2O3) &le; 1.272<br/>gini = 0.067<br/>samples = 20<br/>value = [1, 28]>, fillcolor="#40a0e6"] ;
+1 -> 2 ;
+3 [label=<氧化钾(K2O) &le; 2.261<br/>gini = 0.444<br/>samples = 2<br/>value = [1, 2]>, fillcolor="#9ccef2"] ;
+2 -> 3 ;
+4 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0]>, fillcolor="#e58139"] ;
+3 -> 4 ;
+5 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 2]>, fillcolor="#399de5"] ;
+3 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 18<br/>value = [0, 26]>, fillcolor="#399de5"] ;
+2 -> 6 ;
+7 [label=<氧化铁(Fe2O3) &le; 4.973<br/>gini = 0.375<br/>samples = 2<br/>value = [3, 1]>, fillcolor="#eeab7b"] ;
+1 -> 7 ;
+8 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 1]>, fillcolor="#399de5"] ;
+7 -> 8 ;
+9 [label=<gini = 0.0<br/>samples = 1<br/>value = [3, 0]>, fillcolor="#e58139"] ;
+7 -> 9 ;
+10 [label=<氧化锡(SnO2) &le; 0.07<br/>gini = 0.457<br/>samples = 11<br/>value = [11, 6]>, fillcolor="#f3c6a5"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label=<gini = 0.0<br/>samples = 6<br/>value = [9, 0]>, fillcolor="#e58139"] ;
+10 -> 11 ;
+12 [label=<氧化钙(CaO) &le; 0.723<br/>gini = 0.375<br/>samples = 5<br/>value = [2, 6]>, fillcolor="#7bbeee"] ;
+10 -> 12 ;
+13 [label=<gini = 0.0<br/>samples = 1<br/>value = [2, 0]>, fillcolor="#e58139"] ;
+12 -> 13 ;
+14 [label=<gini = 0.0<br/>samples = 4<br/>value = [0, 6]>, fillcolor="#399de5"] ;
+12 -> 14 ;
+}

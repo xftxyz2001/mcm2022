@@ -1,0 +1,9 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="DengXian"] ;
+edge [fontname="DengXian"] ;
+0 [label=<氧化铅(PbO) &le; 4.535<br/>gini = 0.403<br/>samples = 35<br/>value = [14, 36]>, fillcolor="#86c3ef"] ;
+1 [label=<gini = 0.0<br/>samples = 11<br/>value = [14, 0]>, fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.0<br/>samples = 24<br/>value = [0, 36]>, fillcolor="#399de5"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
